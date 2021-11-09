@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>Realtorist.Web.Helpers</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Dmytro Bondarchuk</Authors>
     <Title>Realtorist.Web.Helpers</Title>
     <Description>Helpers for web project for the RealEstate framework</Description>
@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Realtorist.Models" Version="0.0.2" />
+    <PackageReference Include="Realtorist.Models" Version="0.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
