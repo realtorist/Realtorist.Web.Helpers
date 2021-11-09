@@ -1,3 +1,4 @@
+using System.Linq;
 using Realtorist.Models.Helpers;
 using Realtorist.Models.Settings;
 
@@ -25,7 +26,7 @@ namespace Realtorist.Web.Helpers
         ""logo"": ""{websiteSettings.Logo}"",
         ""telephone"": ""{profile.Phone.FormatPhoneNumber()}"",
         ""url"": ""https://{websiteSettings.WebsiteAddress}"",
-        ""sameAs"": [""{socialSettings.InstagramProfileUrl}"", ""{socialSettings.FacebookProfileUrl}""],
+        ""sameAs"": [{socialSettings.SocialNetworks?.Select(s => $@"""{s.Url}""").Join(",") ?? string.Empty}],
         ""contactPoint"": {{
             ""@type"": ""ContactPoint"",
             ""telephone"": ""{profile.Phone.FormatPhoneNumber()}"",
